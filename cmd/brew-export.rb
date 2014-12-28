@@ -40,7 +40,7 @@ module BrewExport
     end
 
     def export
-      return usage if ARGV.include? '--help' or ARGV.include? '-h'
+      return usage if ARGV.include? '--help' or ARGV.include? '-h' or ARGV.include? 'help'
 
       export_info = Hash.new
 

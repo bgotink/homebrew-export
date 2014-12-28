@@ -37,7 +37,7 @@ module BrewExport
     end
 
     def import
-      usage if ARGV.include? '--help' or ARGV.include? '-h'
+      usage if ARGV.include? '--help' or ARGV.include? '-h' or ARGV.include? 'help'
 
       case ARGV.named.length
       when 0
